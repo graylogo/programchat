@@ -1,25 +1,51 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import {Layout, Menu,message} from 'antd';
+import {BrowserRouter as Router, Link} from "react-router-dom"
+import SearchBox from "./compoments/Search/SearchBox";
+import LoginButton from "./compoments/LoginButton/LoginButton";
+import MyRoute from "./compoments/Route/MyRoute";
+import moment from "moment";
+import "moment/locale/zh-cn"
+moment.locale("zh-cn");
+message.config({
+    top: 70,
+    duration: 2,
+    maxCount: 2,
+});
+const { Header, Content, Footer } = Layout;
 function App() {
-  return (
+    return (
+      <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Layout>
+            {/*页头*/}
+            <Header className="header" style={{padding:"0 15%"}}>
+                {/*<div className="logo" />*/}
+                    <Link to="/" className="logo">
+                    </Link>
+                <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
+                    <Menu.Item key="1"><Link to="/">首页</Link></Menu.Item>
+                    <Menu.Item key="2"><Link to="/hot_topic">热门话题</Link></Menu.Item>
+                    <Menu.Item key="3"><Link to="/followed">关注的人</Link> </Menu.Item>
+                </Menu>
+                <SearchBox/>
+                 <LoginButton/>
+            </Header>
+            {/*主体内容*/}
+            <Content style={{ padding: '64px 10% 0 10%' }}>
+                {/*<Breadcrumb style={{ margin: '16px 0' }}>*/}
+                {/*    <Breadcrumb.Item>Home</Breadcrumb.Item>*/}
+                {/*    <Breadcrumb.Item>List</Breadcrumb.Item>*/}
+                {/*    <Breadcrumb.Item>App</Breadcrumb.Item>*/}
+                {/*</Breadcrumb>*/}
+                <MyRoute/>
+            </Content>
+            {/*页脚*/}
+            <Footer style={{ textAlign: 'center' }}>Program Chat ©2020 Created by Gray</Footer>
+        </Layout>
     </div>
+      </Router>
   );
 }
 

@@ -1,0 +1,8 @@
+.LoginButton{
+    position: absolute;
+    top:0;
+    right:16%;
+}
+.ant-card-meta-title{
+    color: rgba(255, 255, 255, 0.65);
+}
