@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
 import {Layout, Menu,message} from 'antd';
-import {BrowserRouter as Router, Link} from "react-router-dom"
+import {HashRouter as Router, Link} from "react-router-dom"
 import SearchBox from "./compoments/Search/SearchBox";
-import LoginButton from "./compoments/LoginButton/LoginButton";
 import MyRoute from "./compoments/Route/MyRoute";
 import moment from "moment";
 import "moment/locale/zh-cn"
@@ -30,7 +29,7 @@ function App() {
                     <Menu.Item key="3"><Link to="/followed">关注的人</Link> </Menu.Item>
                 </Menu>
                 <SearchBox/>
-                 <LoginButton/>
+                 {/*<LoginButton/>*/}
             </Header>
             {/*主体内容*/}
             <Content style={{ padding: '64px 10% 0 10%' }}>
@@ -42,7 +41,10 @@ function App() {
                 <MyRoute/>
             </Content>
             {/*页脚*/}
-            <Footer style={{ textAlign: 'center' }}>Program Chat ©2020 Created by Gray</Footer>
+            <Footer style={{ textAlign: 'center' }}>Program Chat ©2020 Created by Gray
+            <br/>
+                <a href="http://www.beian.miit.gov.cn/"><img src="http://gray.oss-cn-beijing.aliyuncs.com/2020-04-10%2Ficon.png" alt=""/> 冀ICP备 18030798号-3</a>
+            </Footer>
         </Layout>
     </div>
       </Router>

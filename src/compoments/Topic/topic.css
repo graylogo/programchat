@@ -1,6 +1,34 @@
-img{
+ img{
+    height: auto;
     max-width: 100%;
+    vertical-align: middle;
+    border: 0;
 }
+.commentBox h4{
+    font-size: 17px;
+    margin: 30px 0 15px;
+    border-bottom: 1px solid #eee;
+    font-family: inherit;
+    font-weight: 700;
+    line-height: 20px;
+    color: inherit;
+    text-rendering: optimizelegibility;
+}
+.commentBox .markdown-text p, .commentBox .preview p {
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    line-height: 2em;
+    margin: 1em 0;
+}
+
+.commentBox .ant-spin-nested-loading .ant-comment {
+    padding-right: 10px;
+    background: #fff;
+    border-top: 1px solid #f0f0f0;
+}
+
 .topic_header{
     padding:10px 0;
     border-bottom: 1px solid #ccc;

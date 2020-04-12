@@ -2,36 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="748a44af-54a9-44d4-badb-4853bed8ebc8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config-overrides.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compoments/Admin/Admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compoments/Admin/MyTable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compoments/Admin/adminpage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compoments/Comment/CommentBox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compoments/Followed/Followed.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compoments/HotTopic/HotTopic.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compoments/LoginButton/LoginButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compoments/LoginButton/LoginPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compoments/LoginButton/SignUp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compoments/LoginButton/loginButton.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compoments/LoginButton/loginpage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compoments/LoginButton/signup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compoments/MainContent/MainContent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compoments/MyList/MyList.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compoments/MyList/MyList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compoments/MySider/Mysider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compoments/MySider/mysider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compoments/MySlider/MySlider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compoments/MySlider/myslider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compoments/Recommand/Recommend.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compoments/Route/MyRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compoments/Search/SearchBox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compoments/Search/search.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compoments/Topic/Topic.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compoments/Topic/topic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/compoments/NotFound/NotFound404.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/compoments/Recommand/recommand.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/compoments/Write/WriteTopic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compoments/Comment/CommentBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/Comment/CommentBox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compoments/LoginButton/LoginButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/LoginButton/LoginButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compoments/LoginButton/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/LoginButton/LoginPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compoments/LoginButton/loginButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/LoginButton/loginButton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compoments/MainContent/MainContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/MainContent/MainContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compoments/MyList/MyList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/MyList/MyList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compoments/MySider/mysider.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/MySider/mysider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compoments/Recommand/Recommend.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/Recommand/Recommend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compoments/Route/MyRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/Route/MyRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compoments/Search/search.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/Search/search.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compoments/Topic/Topic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/Topic/Topic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compoments/Topic/topic.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/Topic/topic.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compoments/UserInfo/UserInfoPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/UserInfo/UserInfoPage.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +112,10 @@
       <workItem from="1585978570987" duration="1345000" />
       <workItem from="1585980296896" duration="37079000" />
       <workItem from="1586143102454" duration="1314000" />
-      <workItem from="1586148447921" duration="23839000" />
+      <workItem from="1586148447921" duration="29489000" />
+      <workItem from="1586185771139" duration="18156000" />
+      <workItem from="1586517645705" duration="29151000" />
+      <workItem from="1586672076793" duration="16725000" />
     </task>
     <servers />
   </component>

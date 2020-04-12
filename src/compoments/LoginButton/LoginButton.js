@@ -2,6 +2,7 @@ import React from "react"
 import './loginButton.css'
 import {Avatar, Button, Card} from "antd";
 import Axios from "axios";
+import {Link} from "react-router-dom";
 const { Meta } = Card;
 class LoginButton extends React.Component{
     state ={
@@ -9,22 +10,16 @@ class LoginButton extends React.Component{
     };
 
     componentDidMount() {
-        const token = localStorage.getItem("token")
+        const token = localStorage.getItem("token");
+        const userId = localStorage.getItem("yourId");
         if(token){
             Axios.post("https://vue-js.com/api/v1/accesstoken",{accesstoken:token}).then((res)=>{
                 localStorage.setItem("token",token);
                 this.setState({
-                    userInfo:res.data
+                    userInfo:res.data,
+                    userId:userId
                 })
             })
-        }
-    }
-    componentDidUpdate(prevProps, prevState, snapshot) {
-        const token = localStorage.getItem("token")
-        if(token){
-            console.log("cdu执行了")
-        }else {
-            console.log("111")
         }
     }
 
@@ -32,24 +27,28 @@ class LoginButton extends React.Component{
         const {userInfo} =this.state;
         return (
             <div className = "LoginButton">
-                {userInfo?<>
-                    <Card size={"small"} style={{maxHeight:64,backgroundColor:"#041528"}} bordered={null}>
-                        <Meta
+                    <Card size={"small"} style={{width: 200,maxHeight:150}}>
+                        {userInfo?<>
+                            <span>个人信息</span>
+                            <Meta
                             avatar={
-                                <Avatar src={userInfo.avatar_url} />
+                                <Link to={`/user/${userInfo.loginname}`}><Avatar src={userInfo.avatar_url} /></Link>
                             }
                             title={userInfo.loginname}
-                            // description="This is the description"
+                            description={<Button type="primary" href="#" size={"small"} onClick={this.clickOut}>退出</Button>
+                            }
                         />
-                        <Button type="primary" href="#" size={"small"} onClick={this.clickOut}>退出</Button>
+                            <br/>
+                        <Button type="primary" href="/#/create" size={"small"} block={true}>发布话题</Button>
+
+                        </>:<Button type="primary" href="/#/login" style={{marginLeft:"23%"}}>登录/注册</Button>}
                     </Card>
 
-                </>:<Button type="primary" href="/login">登录/注册</Button>}
             </div>
         );
     }
     clickOut =()=>{
-        localStorage.removeItem("token");
+        localStorage.clear();
         this.setState({
             userInfo:null
         })

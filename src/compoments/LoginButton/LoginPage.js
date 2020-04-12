@@ -6,12 +6,11 @@ import {Link} from "react-router-dom";
 import Axios from "axios";
 class LoginPage extends React.Component{
     state ={
-        userName:'',
+        userName:'c4e22cc7-7123-4819-b0db-6fb799bc350f',
     };
 
     render() {
-        const {username}=this.state;
-        console.log(this.props)
+        const {userName}=this.state;
         return (
             <div className = "loginPage">
                 <Form
@@ -31,7 +30,7 @@ class LoginPage extends React.Component{
                             },
                         ]}
                     >
-                        <Input value={username} onChange={(e)=>{this.setState({userName:e.target.value})}} prefix={<UserOutlined className="site-form-item-icon" />} placeholder="用户名" />
+                        <Input value={userName} onChange={(e)=>{this.setState({userName:e.target.value})}} prefix={<UserOutlined className="site-form-item-icon" />} placeholder="用户名" />
                     </Form.Item>
                     <Form.Item
                         name="password"
@@ -71,11 +70,12 @@ class LoginPage extends React.Component{
         const {userName}= this.state;
         Axios.post("https://vue-js.com/api/v1/accesstoken",{accesstoken:userName}).then((res)=>{
             localStorage.setItem("token",userName);
+            localStorage.setItem("yourId",res.data.id);
             //这里要考虑登录后跳转到原来的页面
             message.success('登录成功！');
             //如果用户直接访问登录页，应该判断是否有历史页，哪有的话跳转主页
             // window.location.pathname="/"
-            this.props.history.push('/',userName)
+            this.props.history.push('/#/')
 
         }).catch(() => {
             message.error('登录失败！');

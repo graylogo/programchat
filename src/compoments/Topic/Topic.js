@@ -4,17 +4,27 @@ import "./topic.css"
 import {Button, Skeleton} from "antd";
 import moment from "moment";
 import CommentBox from "../Comment/CommentBox";
-// import {Link} from "react-router-dom";
+import {withRouter} from "react-router-dom";
 class Topic extends React.Component {
     state = {
         text: null,
         isCollect: false
     };
 
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        const {topicId} = this.props;
+        if(prevProps.topicId!==this.props.match.params.id){
+            axios.get(`https://www.vue-js.com/api/v1/topic/${topicId}`).then(res => {
+                this.setState({
+                    text: res.data.data
+                });
+            })
+        }
+    }
+
     componentDidMount() {
         const {topicId} = this.props;
         axios.get(`https://www.vue-js.com/api/v1/topic/${topicId}`).then(res => {
-            console.log(res)
             this.setState({
                 text: res.data.data
             });
@@ -24,6 +34,7 @@ class Topic extends React.Component {
     }
 
     render() {
+        const {topicId} = this.props;
         const {text, isCollect} = this.state;
         return (
             text ? (
@@ -40,7 +51,7 @@ class Topic extends React.Component {
                         </div>
                     </div>
                     <div dangerouslySetInnerHTML={{__html: text.content}}/>
-                    <CommentBox replies ={text.replies}/>
+                    <CommentBox replies={text.replies} topicId={topicId}/>
                 </div>
 
             ) : <Skeleton active/>
@@ -50,7 +61,6 @@ class Topic extends React.Component {
     toCollect = () => {
         const {text, isCollect} = this.state;
         const token = localStorage.getItem("token");
-        console.log(text, token)
         if(isCollect){
             axios.post("https://vue-js.com/api/v1/topic/de_collect",{accesstoken:token,topic_id:text.id}).then((res)=>{
                 this.setState({
@@ -66,4 +76,4 @@ class Topic extends React.Component {
         }
     }
 }
-export default Topic;
+export default withRouter(Topic);

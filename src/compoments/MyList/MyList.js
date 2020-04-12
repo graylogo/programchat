@@ -1,6 +1,6 @@
 import React from "react"
 import './MyList.css'
-import {List, Avatar, Skeleton} from 'antd';
+import {List, Avatar, Skeleton, Tag} from 'antd';
 import {
     MessageOutlined,
     EyeOutlined,
@@ -10,6 +10,7 @@ import {
 import axios from "axios";
 import moment from "moment";
 import {Link, withRouter} from 'react-router-dom'
+// import list from "less/lib/less/functions/list";
 //显示模块
 const IconText = ({ icon, text }) => (
     <span>
@@ -21,7 +22,7 @@ class MyList extends React.Component{
     state ={
         listData:null,
         currentPage:1,
-        tab:"all"
+        tab:"all",
     };
 
     componentDidMount() {
@@ -46,9 +47,19 @@ class MyList extends React.Component{
 
     render() {
         const {listData}= this.state;
+        const pathname =this.props.location.pathname.replace('/tab/','');
+        const pageNum=[
+            {tab:"/",num:1015},
+            {tab:"all",num:1015},
+            {tab:"good",num:15},
+            {tab:"share",num:350},
+            {tab:"weex",num:3},
+            {tab:"job",num:39},
+            {tab:"ask",num:623},
+        ];
         return (
            listData?
-              ( <div className = "myList">
+              ( <div className = "myList" style={{minWidth:"570px"}}>
                <List
                    itemLayout="vertical"
                    size="large"
@@ -59,13 +70,13 @@ class MyList extends React.Component{
                           })
                        },
                        showSizeChanger:false,
-                       total:99,
+                       total:pageNum.find(item=>item.tab===pathname).num,
                        pageSize: 20,
                    }}
                    dataSource={listData}
                    footer={
                        <div>
-                           <b>ant design</b> footer part
+                           <b>每一页20条</b>
                        </div>
                    }
                    renderItem={item => (
@@ -81,9 +92,15 @@ class MyList extends React.Component{
                            }
                        >
                            <List.Item.Meta
-                               avatar={<Avatar src={item.author.avatar_url} />}
+                               avatar={<Link to={`/user/${item.author.loginname}`}><Avatar src={item.author.avatar_url} /></Link>}
                                // title={<a href={item.href}>{item.title}</a>}
-                               title={<Link to={`/topic/${item.id}`}>{item.title}</Link>}
+                               title={<>
+                                   {   item.top?<Tag color="green">置顶</Tag>:
+                                       item.good?<Tag color="gold">精华</Tag>:
+                                       item.tab==="share"?<Tag color="blue">分享</Tag>
+                                       :item.tab==="ask"?<Tag color="purple">问答</Tag>
+                                           :""}
+                                   <Link to={`/topic/${item.id}`}>{item.title}</Link></>}
                                // description={item.content}
                            />
                            {/*{item.content}*/}
