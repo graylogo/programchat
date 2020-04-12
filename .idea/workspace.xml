@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="748a44af-54a9-44d4-badb-4853bed8ebc8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/compoments/Message/MessageForMe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compoments/Comment/CommentBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/Comment/CommentBox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compoments/HotTopic/HotTopic.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/HotTopic/HotTopic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compoments/LoginButton/LoginButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/LoginButton/LoginButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compoments/LoginButton/loginButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/LoginButton/loginButton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compoments/MainContent/MainContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/MainContent/MainContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compoments/MyList/MyList.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/MyList/MyList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compoments/MySlider/MySlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/MySlider/MySlider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compoments/LoginButton/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/LoginButton/LoginPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/compoments/Recommand/recommand.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/Recommand/recommand.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compoments/Route/MyRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/Route/MyRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compoments/UserInfo/UserInfoPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/UserInfo/UserInfoPage.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,7 +97,7 @@
       <workItem from="1586185771139" duration="18156000" />
       <workItem from="1586517645705" duration="29151000" />
       <workItem from="1586672076793" duration="21680000" />
-      <workItem from="1586705394750" duration="3547000" />
+      <workItem from="1586705394750" duration="4174000" />
     </task>
     <servers />
   </component>

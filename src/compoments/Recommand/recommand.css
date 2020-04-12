@@ -1,8 +1,8 @@
 .recommand{
     /*position: fixed;*/
-    position: absolute;
-    top:80px;
-    right:10%;
+    /*position: absolute;*/
+    /*top:80px;*/
+    /*right:10%;*/
 }
 .recommand .ant-list-item a{
     color:#333

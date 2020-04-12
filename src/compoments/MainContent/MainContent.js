@@ -19,7 +19,7 @@ class MainContent extends React.Component{
         const isWrite = this.props.match.url.includes('create');
         const isMessage = this.props.match.url.includes('message');
         return (
-            <div className = "mainContent" style={{minWidth:"570px",maxWidth:"70%",margin:"0 auto"}}>
+            <div className = "mainContent" style={{minWidth:"570px",maxWidth:"95%",margin:"0 auto"}}>
                 <Layout className="site-layout-background" style={{ padding: '24px 0'}}>
                     {isWrite?<WriteTopic/>:<>
                         <Mysider/>

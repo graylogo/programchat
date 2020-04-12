@@ -6,7 +6,8 @@ import {Link} from "react-router-dom";
 import Axios from "axios";
 class LoginPage extends React.Component{
     state ={
-        userName:'c4e22cc7-7123-4819-b0db-6fb799bc350f',
+        // userName:'c4e22cc7-7123-4819-b0db-6fb799bc350f',
+        userName:'',
     };
 
     render() {
