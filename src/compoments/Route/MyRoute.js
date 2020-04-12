@@ -13,7 +13,8 @@ const MyRoute =(props)=>{
             <Route exact path="/" component={MainContent}/>
             <Route path="/tab" component={MainContent}/>
             <Route path="/topic/:id" component={MainContent}/>
-            <Route path="/user/:id" component={MainContent}/>
+            <Route path="/my/messages" component={MainContent}/>
+            <Route exact path="/user/:id" component={MainContent}/>
             <Route path="/create" component={MainContent}/>
             <Route path="/login" component={LoginPage}/>
             <Route path="/sign_up" component={SignUp}/>

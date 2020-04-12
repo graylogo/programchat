@@ -4,3 +4,9 @@
     top:80px;
     right:10%;
 }
+.recommand .ant-list-item a{
+    color:#333
+}
+.recommand .ant-list-item a:visited{
+    color:#BCBCBC
+}

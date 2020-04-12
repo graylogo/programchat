@@ -2,11 +2,22 @@ import React from "react"
 import axios from "axios";
 import {Avatar, List, Skeleton} from "antd";
 import moment from "moment";
+import {withRouter} from "react-router-dom"
 
 class UserInfoPage extends React.Component{
     state ={
         userInformation:null
     };
+componentDidUpdate(prevProps, prevState, snapshot) {
+    const {userName}= this.props;
+   if(prevProps.userName!== this.props.match.params.id){
+       axios.get(`https://www.vue-js.com/api/v1/user/${userName}`).then(res=>{
+           this.setState({
+               userInformation:[res.data.data]
+           })
+       });
+   }
+}
 
     componentDidMount() {
         const {userName}= this.props;
@@ -38,4 +49,4 @@ class UserInfoPage extends React.Component{
         );
     }
 }
-export default UserInfoPage;
+export default withRouter(UserInfoPage);

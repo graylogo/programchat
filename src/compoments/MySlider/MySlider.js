@@ -7,16 +7,13 @@ const MySlider =(props)=>{
         <div className = "slider">
             <Carousel autoplay>
                 <div>
-                    <h3>公告信息栏</h3>
+                    <img src="http://gray.oss-cn-beijing.aliyuncs.com/2020-04-12%2F4.png" alt="a" style={{width:"100%"}}/>
                 </div>
                 <div>
-                    <h3>2</h3>
+                    <img src="http://gray.oss-cn-beijing.aliyuncs.com/2020-04-12%2F1.png" alt="a" style={{width:"100%"}}/>
                 </div>
                 <div>
-                    <h3>3</h3>
-                </div>
-                <div>
-                    <h3>4</h3>
+                    <img src="http://gray.oss-cn-beijing.aliyuncs.com/2020-04-12%2F3.png" alt="a" style={{width:"100%"}}/>
                 </div>
             </Carousel>
         </div>

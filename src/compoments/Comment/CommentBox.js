@@ -95,7 +95,7 @@ class CommentBox extends React.Component{
                                                 });
                                                 message.success("评论成功！")
                                             }).catch(()=>{
-                                                message.error("评论失败！")
+                                                message.error("请先登录！")
                                             })
                                         }}
                                 >提交</Button>}

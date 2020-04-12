@@ -4,6 +4,6 @@
     /*right:16%;*/
     /*z-index: 99999;*/
 }
-.ant-card-meta-title{
+.ant-card-meta-title a{
     color: rgba(0, 0, 0, 0.65);
 }
