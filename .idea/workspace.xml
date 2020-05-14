@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="748a44af-54a9-44d4-badb-4853bed8ebc8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/compoments/LoginButton/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/LoginButton/LoginPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compoments/Recommand/recommand.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/Recommand/recommand.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compoments/Comment/CommentBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/compoments/Comment/CommentBox.js" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +23,11 @@
   <component name="ProjectId" id="1a3yS8Xn4nD6LAQKuut2eKFqbSF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
@@ -52,18 +55,6 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/compoments/Route" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -97,7 +88,12 @@
       <workItem from="1586185771139" duration="18156000" />
       <workItem from="1586517645705" duration="29151000" />
       <workItem from="1586672076793" duration="21680000" />
-      <workItem from="1586705394750" duration="4174000" />
+      <workItem from="1586705394750" duration="4870000" />
+      <workItem from="1586746876830" duration="1943000" />
+      <workItem from="1586757946340" duration="146000" />
+      <workItem from="1588907821237" duration="405000" />
+      <workItem from="1589034123049" duration="10000" />
+      <workItem from="1589448255321" duration="282000" />
     </task>
     <servers />
   </component>
@@ -119,5 +115,23 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1876" height="286" key="GridCell.Tab.0.bottom" timestamp="1589448446592">
+      <screen x="1680" y="-200" width="1920" height="1080" />
+    </state>
+    <state width="1876" height="286" key="GridCell.Tab.0.bottom/0.23.1680.1027/1680.-200.1920.1080@1680.-200.1920.1080" timestamp="1589448446592" />
+    <state width="1876" height="286" key="GridCell.Tab.0.center" timestamp="1589448446588">
+      <screen x="1680" y="-200" width="1920" height="1080" />
+    </state>
+    <state width="1876" height="286" key="GridCell.Tab.0.center/0.23.1680.1027/1680.-200.1920.1080@1680.-200.1920.1080" timestamp="1589448446588" />
+    <state width="1876" height="286" key="GridCell.Tab.0.left" timestamp="1589448446587">
+      <screen x="1680" y="-200" width="1920" height="1080" />
+    </state>
+    <state width="1876" height="286" key="GridCell.Tab.0.left/0.23.1680.1027/1680.-200.1920.1080@1680.-200.1920.1080" timestamp="1589448446587" />
+    <state width="1876" height="286" key="GridCell.Tab.0.right" timestamp="1589448446590">
+      <screen x="1680" y="-200" width="1920" height="1080" />
+    </state>
+    <state width="1876" height="286" key="GridCell.Tab.0.right/0.23.1680.1027/1680.-200.1920.1080@1680.-200.1920.1080" timestamp="1589448446590" />
   </component>
 </project>

@@ -97,8 +97,7 @@ class CommentBox extends React.Component{
                                             }).catch(()=>{
                                                 message.error("请先登录！")
                                             })
-                                        }}
-                                >提交</Button>}
+                                        }}>提交</Button>}
                                                  placeholder={`@${item.author.loginname} `} value={reCommentVal}
                                                  onChange={(e)=>{
                                                      this.setState({reCommentVal: e.target.value})
